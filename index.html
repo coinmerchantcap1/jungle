@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title> Desketchain | An All Decentralized Design Fields Open Network </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">
+     </script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--Get your own code at fontawesome.com-->
+<style>
+:root {
+  --baseColor: #606468;
+  --goldenrodColor: #ffb31a;
+  --iconColor: #1e90ff;
+  --spinColor: #FC3D6D;
+  --backgroundFirst: #0d0d0d;
+  --backgroundSecond: #fff;
+  --backgroundThird: #eee;
+}
+
+
+:root {
+  --background: #000;
+  --htmlFontSize: 100%;
+  --black-bckgrnd: #0d0d0d
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background: var(--backgroundFirst);
+  color: var(--bodyColor);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* -----------
+======================
+Navbar Code
+======================
+------------ */
+.header {
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  height: 55px;
+  font-weight: ;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+
+.img {
+  display: inline-block;
+  height: 50px;
+  z-index: 3;
+}
+
+.nav {
+    /* From https://css.glass */
+background: var(--backgroundFirst);
+  box-shadow: 0px 5px 25px 0px #000;
+  height: 60px;
+  font-weight: ;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 8px 8px 8px 8px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 8px 20px 8px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-family: "Catamaran", sans-serif;
+}
+
+.nav > .nav-links > a:hover,
+a:focus {
+  transform: translateY(-.2rem);
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: inherit;
+  }
+
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label,
+label:focus {
+  transform: translateY(-.2rem);
+  text-decoration: none;
+}
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 23px;
+    height: 9px;
+    border-top: 2px solid var(--backgroundSecond);
+  }
+  .nav > .nav-links {
+    position: relative;
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* -----------
+======================
+Navbar Code End
+======================
+------------ */
+
+
+
+
+
+
+
+
+.hero {
+		    background-color: #0d0d0d;
+		    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3cpath d='M446.13 259.19a36.34 36.34 0 1 0-57.51 44.44z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1322.46 477.77a7.74 7.74 0 1 0-4.83 14.71z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1357.48 131.19L1410.91 131.19L1410.91 184.62L1357.48 184.62z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M920.16 210.82L965.45 210.82L965.45 222.22L920.16 222.22z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1243.73 481.35 a34.62 34.62 0 1 0 69.24 0 a34.62 34.62 0 1 0 -69.24 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M415.02 140.28a39.86 39.86 0 1 0-74.79 27.59z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M475.59 220.96a21.51 21.51 0 1 0-33.58 26.89z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1196.98 478.01a32.95 32.95 0 1 0 62.78-20.04z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M901.41 258.54a49.66 49.66 0 1 0-28.74-95.07z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M72.61 74.64a15.68 15.68 0 1 0-21.83-22.51z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M96.51 365.46L124.38 365.46L124.38 393.33L96.51 393.33z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M294.72 90.97L344.92 90.97L344.92 141.17L294.72 141.17z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M117.86 459.64 a10.93 10.93 0 1 0 21.86 0 a10.93 10.93 0 1 0 -21.86 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1044.62 487.91 a36.73 36.73 0 1 0 73.46 0 a36.73 36.73 0 1 0 -73.46 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1154.25 257.95 a14.11 14.11 0 1 0 28.22 0 a14.11 14.11 0 1 0 -28.22 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M546.32 363.72L587.37 363.72L587.37 404.77L546.32 404.77z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1278.48 306.48 a48.55 48.55 0 1 0 97.1 0 a48.55 48.55 0 1 0 -97.1 0z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1032.66 375.89L1066.65 375.89L1066.65 409.88L1032.66 409.88z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1403.47 511.51L1441.31 511.51L1441.31 528.41L1403.47 528.41z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M231.25 86.25L243.43 86.25L243.43 131.56L231.25 131.56z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1008.87 288.62L1011.4 288.62L1011.4 291.15L1008.87 291.15z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M824.21 220.89 a41.31 41.31 0 1 0 82.62 0 a41.31 41.31 0 1 0 -82.62 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1388.35 65.71a43.88 43.88 0 1 0-19.04 85.67z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M928.28 467.36 a16.39 16.39 0 1 0 32.78 0 a16.39 16.39 0 1 0 -32.78 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M947.31 124.23L998.78 124.23L998.78 148.73L947.31 148.73z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M357.83 160.17a45.74 45.74 0 1 0-69.08 59.97z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1130.42 297.39a41.21 41.21 0 1 0 81.59-11.66z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1130.01 169.73L1183.02 169.73L1183.02 187.73L1130.01 187.73z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M346.36 508.38 a19.34 19.34 0 1 0 38.68 0 a19.34 19.34 0 1 0 -38.68 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M460.46 443.6a7.2 7.2 0 1 0-6.81 12.69z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M839.23 37.63L855.96 37.63L855.96 54.36L839.23 54.36z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M208.44 359.8L250.59 359.8L250.59 385.5L208.44 385.5z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M539.49 509.83L565.81 509.83L565.81 536.15L539.49 536.15z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+		}
+		.hero h1 {
+			font-size: 10vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.hero p {
+		    color: #b3b3b3;
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.hero button {
+			font-size: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 8px 3px #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 0.7rem 1rem;
+			display: inline;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.hero button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+
+
+
+
+
+
+
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+.Advert  {
+background: var(--iconColor);
+color: var(--backgroundSecond);
+text-align: center;
+width: 100%;
+padding: 15px;
+margin-top: 0px;
+margin-bottom: -2px;
+}
+
+
+
+
+
+
+.design {
+		    background-color: #0d0d0d;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 70vh;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+		}
+		.design h1 {
+			font-size: 10vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.design p {
+		    color: var(--bodyColor);
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.design button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.design button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+/*  --typing effect--  */
+#spin {
+  color: var(--backgroundSecond);
+  font-size: 7.5vw;
+  text-align: center;
+  font-weight: 1000;
+  text-shadow: 0px 0px 8px 3px #9c2be7;
+  opacity: 1; filter: #9c2be7;
+}
+
+#spin:after {
+  content:"";
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  0% { content:"Applied arts";}
+  10% { content:"Architecture";}
+  20% { content:"Automotive";}
+  30% { content:"Biological";}
+  40% { content:"Cartographic";}
+  50% { content: "Configuration";}
+  60% { content: "Communication";}
+  70% { content: "Costume";}
+  80% { content: "Management";}
+  90% { content: "Engineering";}
+
+  100% { content:"Fashion";}
+  110% { content:"Floral";}
+  120% { content:"Game";}
+  130% { content:"Graphic";}
+  140% { content:"Informa";}
+  150% { content: "Indust";}
+  160% { content: "Instruc";}
+  170% { content: "Interac";}
+  180% { content: "Interior";}
+  190% { content: "Landsc";}
+}
+/*  --/tping effect--  */
+
+
+
+
+
+
+
+
+.bunches {
+		    background-color: #0d0d0d;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100%;
+			padding: 20px;
+			color: #fff;
+			text-align: center;
+		}
+		.bunches h1 {
+			font-size: 40px;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1.2;
+		}
+		.bunches p {
+		    color: var(--bodyColor);
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.bunches button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.bunches button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+
+
+
+
+
+.pricing-plans {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1453' height='556' preserveAspectRatio='none' viewBox='0 0 1453 556'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3cpath d='M -153.52287541842261%2c435 C -104.92%2c389.8 -7.72%2c238.8 89.47712458157739%2c209 C 186.68%2c179.2 235.28%2c280 332.4771245815774%2c286 C 429.68%2c292 478.28%2c216 575.4771245815774%2c239 C 672.68%2c262 721.28%2c419 818.4771245815774%2c401 C 915.68%2c383 964.28%2c156.8 1061.4771245815773%2c149 C 1158.68%2c141.2 1207.28%2c353.8 1304.4771245815773%2c362 C 1401.68%2c370.2 1517.77%2c193.2 1547.4771245815773%2c190 C 1577.18%2c186.8 1471.9%2c314.8 1453%2c346' stroke='rgba(8%2c 145%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -333.9437046682571%2c381 C -285.34%2c339.4 -188.14%2c167 -90.94370466825711%2c173 C 6.26%2c179 54.86%2c390.4 152.0562953317429%2c411 C 249.26%2c431.6 297.86%2c294.2 395.0562953317429%2c276 C 492.26%2c257.8 540.86%2c337.2 638.0562953317428%2c320 C 735.26%2c302.8 783.86%2c174.8 881.0562953317428%2c190 C 978.26%2c205.2 1026.86%2c386.8 1124.0562953317428%2c396 C 1221.26%2c405.2 1301.27%2c252.2 1367.0562953317428%2c236 C 1432.85%2c219.8 1435.81%2c299.2 1453%2c315' stroke='rgba(8%2c 145%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -35.94398232791329%2c331 C 12.66%2c308.2 109.86%2c194.4 207.0560176720867%2c217 C 304.26%2c239.6 352.86%2c451.4 450.0560176720867%2c444 C 547.26%2c436.6 595.86%2c196.8 693.0560176720867%2c180 C 790.26%2c163.2 838.86%2c352.8 936.0560176720867%2c360 C 1033.26%2c367.2 1081.86%2c215.4 1179.0560176720867%2c216 C 1276.26%2c216.6 1324.86%2c373.4 1422.0560176720867%2c363 C 1519.26%2c352.6 1658.87%2c167.4 1665.0560176720867%2c164 C 1671.24%2c160.6 1495.41%2c309.6 1453%2c346' stroke='rgba(192%2c 38%2c 211%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -160.3948991478578%2c380 C -111.79%2c345.2 -14.59%2c225.2 82.60510085214217%2c206 C 179.81%2c186.8 228.41%2c278.6 325.6051008521422%2c284 C 422.81%2c289.4 471.41%2c203.4 568.6051008521422%2c233 C 665.81%2c262.6 714.41%2c448.8 811.6051008521422%2c432 C 908.81%2c415.2 957.41%2c176.8 1054.6051008521422%2c149 C 1151.81%2c121.2 1200.41%2c276.8 1297.6051008521422%2c293 C 1394.81%2c309.2 1509.53%2c202.2 1540.6051008521422%2c230 C 1571.68%2c257.8 1470.52%2c391.6 1453%2c432' stroke='rgba(192%2c 38%2c 211%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1453' height='556' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: -35px;
+}
+
+
+.pricing-card {
+/* From https://css.glass */
+background: #26262680;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(74, 67, 67, 0.51);
+  --col: #e4e4e7;
+  position: relative;
+  min-width: 360px;
+  padding: 32px;
+  padding-bottom: 80px;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.pricing-card.basic {
+  --col: #0891b2;
+}
+
+.pricing-plans .pricing-card.basic svg {
+fill: #0891b2;
+stroke: #FFF;
+height: 2.999em;
+width: 2.999em;
+}
+
+.pricing-card.standard {
+  --col: #059669;
+}
+
+.pricing-plans .pricing-card.standard svg {
+fill: #059669;
+stroke: #FFF;
+height: 2.999em;
+width: 2.999em;
+}
+
+.pricing-card.premium {
+  --col: #c026d3;
+}
+
+.pricing-plans .pricing-card.premium svg {
+fill: #c026d3;
+stroke: #FFF;
+height: 2.999em;
+width: 2.999em;
+}
+
+.pricing-card:hover {
+  border-color: var(--col);
+  background-color: #26262680;
+  box-shadow: 0 0 32px #171717;
+  transform: translateY(-16px) scale(1.02);
+  transition: all 0.5s ease;
+}
+
+.pricing-card > *:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.pricing-card .heading h4 {
+  padding-bottom: 12px;
+  color: var(--col);
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.pricing-card .heading p {
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.pricing-card .price {
+  position: relative;
+  color: var(--col);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-card .price sub {
+  position: absolute;
+  bottom: 14px;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+
+.pricing-card .features li strong {
+  padding-left: 24px;
+}
+
+.pricing-card .cta-btn {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  box-shadow: 0px 0px 8px 3px var(--backgroundFirst);
+  color: #e4e4e7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pricing-card .cta-btn:active {
+  background-color: transparent;
+  color: var(--col);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+.about {
+background-color: #f3e9fc;
+width: 100%;
+padding: 0px;
+}
+
+.about h1{
+color: #a3a3a3;
+width; 70%;
+margin-top: 30px;
+text-align: center;
+font-weight: 1000;
+}
+
+.about p {
+color: inherit;
+margin-left: 40px;
+margin-right: 40px;
+text-align: center;
+font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/*
+======================
+Coin slide names============
+======================
+*/
+.distribution {
+  margin-top: 50px;
+  padding: 70px;
+}
+
+.distribution h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.distribution ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+
+.distribution li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.distribution .label {
+  font-size: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.distribution .value {
+  font-size: 4vw;
+  font-weight: 1000;
+  color: var(--backgroundSecond);
+}
+
+/*
+======================
+Coin slide names end============
+======================
+*/
+
+
+
+
+
+
+.token {
+  background-color: #f3e9fc;
+  height: 100hv;
+  padding: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: ;
+}
+
+
+.token .row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.token .column-66 {
+  float: left;
+  width: 55%;
+  padding: 0px;
+}
+
+.token .column-33 {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+.token .large-font {
+  color: #000;
+  font-size: 40px;
+}
+
+
+.who a {
+
+}
+
+.token img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+ .token .column-66,
+ .token .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+
+ .token img {
+    margin: auto;
+  }
+}
+
+
+.token a {
+    color: var(--iconColor);
+    text-align: left;
+    display: inline-block;
+  }
+
+
+
+
+
+/* Remove extra left and right margins, due to padding */
+.tokenization {padding: 30px; margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.tokenization:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Float four columns side by side */
+.tokenization .column {
+  float: left;
+  width: 33.33333333333333%;
+  padding: 0 5px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .tokenization .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.tokenization .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+
+
+
+
+
+
+
+
+.roadmap {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.roadmap-header {
+  text-align: center;
+}
+
+.roadmap-header h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.roadmap-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.roadmap-item {
+  width: 300px;
+  margin: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.roadmap-item h3 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.roadmap-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  background-color: black;
+  padding: 64px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 55%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* -----
+===============
+Footer Code End
+===============
+------ */
+footer{
+  position: relative;
+  background: #000;
+  width: 100%;
+  bottom: -50px;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  background: #000;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+background: #2c303a;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 5px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+/* -----
+==============
+Footer Code End
+==============
+------ */
+</style>
+</head>
+<body>
+
+
+
+<!-------
+ ======================
+ Navbar ============
+ ======================
+ ------>
+ <header class="header">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <span><img class="img" src="https://assets.brandfolder.com/pl546j-7le8zk-btwjnu/view@2x.png?v=1586891797" /></span>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a href="#P1">Graphpaper</a>
+    <a href="#P2">Intro</a>
+    <a href="#P3">Designers</a>
+    <a href="#P4">Ecosystem</a>
+    <a href="#P5">Roadmap</a>
+  </div>
+</div>
+</header>
+  <!-------
+ ======================
+ / Navbar ============
+ ======================
+ ------>
+
+
+
+
+
+
+<section id="P1" class="hero">
+		<h1>Design Bridge</h1>
+		<p>
+          A decentralized design platform for creatives and innovators.
+          Designtralized (Design for Tomorrow) is an open decentralized platform that aims
+    to revolutionize the design industry by providing a comprehensive
+    ecosystem for designers, design firms, and clients.
+        </p>
+        <p>
+		<button style="background: #9e4be7; box-shadow: 0px 0px 8px 3px #9e4be7;">Graphpaper V1</button>
+        <button>Buy on <-_-></button>
+        </p>
+	</section>
+
+
+
+
+
+
+
+
+<div style="text-align:center">
+  <p class="Advert">
+        <a>Join The Designtralized Studio For Better Tomorrow <text style="font-size: 20px; font-weight: 1000;">&rarr;</text>
+        </a>
+    </p>
+</div>
+
+
+<!-- Clarity Section -->
+<div id="P2" class="token">
+  <div class="row">
+    <div class="column-33">
+       <!--- Video --->
+      <video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+        <!--- Video --->
+    </div>
+    <div class="column-66">
+      <h1 class="large-font" style="color: inherit;"><b>Presentation</b></h1>
+      <p style="font-size: 20px;">
+        DFT, or Designtralized Finance, is a blockchain-based platform that is
+        disrupting the design industry by leveraging the power of decentralized
+        technology. The platform aims to address various challenges that designers
+        and creative professionals face, such as lack of access to design resources,
+        difficulty in finding work, and issues with intellectual property rights.
+      </p>
+
+        <a class="button" href="http://localhost:63342/The%20Open%20Design%20Network/Ecosystem.html?_ijt=cf3ojhoc2ufou7sgs7vibr6ng6">Explore more</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="tokenization">
+  <div class="column">
+    <div class="card">
+      <h3>
+           <a href="https://app.uniswap.org/#/swap?use=V2&outputCurrency=0x4f08705fb8f33affc231ed66e626b40e84a71870&inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f">
+        How Its Works &rarr;
+    </a>
+      </h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>
+           <a href="http://localhost:63342/The%20Open%20Design%20Network/Use%20Case.html?_ijt=nl7nda5c5m4e0lahladal687tv">
+        Who We're &rarr;
+    </a>
+      </h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>
+           <a href="http://localhost:63342/The%20Open%20Design%20Network/Future.html?_ijt=nk6fu1tpv2m8poqg9v6nnp19k6">
+        Participators &rarr;
+    </a>
+      </h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<section id="P3" class="design">
+		<h1>
+          <!---- Typing Effect HTML (1) ---->
+        <span id="spin"></span>
+<!---- /Typing Effect HTML (1) ---->
+        </h1>
+		<p><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #fff; padding: 3px 10px;">Design</text> is not just about aesthetics, it's about solving problems and improving outcomes be involved.</p>
+		<button>Join Studio</button>
+	</section>
+
+
+
+<section class="pricing-plans">
+
+      <div class="pricing-card basic">
+        <div class="heading">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill='#FFFFFF'><path d="M37 21c-1.7 0-3 1.4-3 3v10H24c-1.7 0-3 1.4-3 3 0 1.7 1.3 3 3 3h13c1.7 0 3-1.3 3-3V24c0-1.6-1.3-3-3-3zm1 16c0 .5-.5 1-1 1H24c-.5 0-1-.5-1-1s.5-1 1-1h12V24c0-.5.5-1 1-1s1 .5 1 1v13zM27 11c0-1.7-1.3-3-3-3H11c-1.7 0-3 1.3-3 3v13c0 1.6 1.3 3 3 3s3-1.4 3-3V14h10c1.7 0 3-1.4 3-3zm-15 1v12c0 .5-.5 1-1 1s-1-.5-1-1V11c0-.5.5-1 1-1h13c.5 0 1 .5 1 1s-.5 1-1 1H12z"></path><path fill='#0891B2' d="M28 30h-8c-1.1 0-2-.9-2-2v-8c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v8c0 1.1-.9 2-2 2z"></path></g></svg>
+          <h4>MANAGEMENT</h4>
+          <p>
+          Managing all the design-related<br>
+            resources, such as assets, templates,<br>
+            tools, software, and intellectual<br>
+            property, that are required for<br>
+            creating designs and help businesses,<br>
+            increase productivity, and maintain <br>
+            consistency in design quality.
+          </p>
+        </div>
+        <button class="cta-btn">Coming Soon</button>
+      </div>
+
+
+      <div class="pricing-card standard">
+        <div class="heading">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill='#FFFFFF'><path fill='#059669' d="M29 13h6v22h-6z"></path><path d="M13 35h6V25h-6v10zm2-8h2v6h-2v-6zM21 35h6V19h-6v16zm2-14h2v12h-2V21zM38 8H10c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h28c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM10 38V10h28v28H10z"></path></g></svg>
+          <h4>MARKETPLACE</h4>
+          <p>
+          The DSM is one of the main services<br>
+             provided by the Designtralized<br>
+             platform. It is a decentralized<br>
+             digital marketplace that connects<br>
+             businesses and individuals in need<br>
+             of design services with a global<br>
+             network of professional designers.
+          </p>
+        </div>
+        <button class="cta-btn">Coming Soon</button>
+      </div>
+
+
+      <div class="pricing-card premium">
+        <div class="heading">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill='#FFFFFF'><path d="M24 7.5l1.3 1.3c.8.8 1.8 1.2 2.8 1.2H30v1.9c0 1.1.4 2.1 1.2 2.8l1.3 1.3-1.3 1.3c-.8.8-1.2 1.8-1.2 2.8V22h-1.9c-1.1 0-2.1.4-2.8 1.2L24 24.5l-1.3-1.3c-.8-.8-1.8-1.2-2.8-1.2H18v-1.9c0-1.1-.4-2.1-1.2-2.8L15.5 16l1.3-1.3c.8-.8 1.2-1.8 1.2-2.8V10h1.9c1.1 0 2.1-.4 2.8-1.2L24 7.5m0-2c-.5 0-1 .2-1.4.6l-1.3 1.3c-.4.4-.9.6-1.4.6H18c-1.1 0-2 .9-2 2v1.9c0 .5-.2 1-.6 1.4l-1.3 1.3c-.8.8-.8 2 0 2.8l1.3 1.3c.4.4.6.9.6 1.4V22c0 1.1.9 2 2 2h1.9c.5 0 1 .2 1.4.6l1.3 1.3c.4.4.9.6 1.4.6s1-.2 1.4-.6l1.3-1.3c.4-.4.9-.6 1.4-.6H30c1.1 0 2-.9 2-2v-1.9c0-.5.2-1 .6-1.4l1.3-1.3c.8-.8.8-2 0-2.8l-1.3-1.3c-.4-.4-.6-.9-.6-1.4V10c0-1.1-.9-2-2-2h-1.9c-.5 0-1-.2-1.4-.6l-1.3-1.3c-.4-.4-.9-.6-1.4-.6z"></path><path fill='#C026D3' d="M21.3 26.6c-.4-.4-.9-.6-1.4-.6H17l-4 15 5-3 4 4 1-14-1.7-1.4zM31 26h-2.9c-.5 0-1 .2-1.4.6L25 28l1 14 4-4 5 3-4-15z"></path></g></svg>
+
+          <h4>CONTEST</h4>
+          <p>
+           Feature of enables users to host design<br>
+             competitions to get the best design<br>
+             for their projects and provides a platform<br>
+             for individuals and companies to post<br>
+             a design brief and receive submissions<br>
+             from designers around the world.
+          </p>
+        </div>
+        <button class="cta-btn">Coming Soon</button>
+      </div>
+    </section>
+
+
+
+
+
+
+
+ <div id="P4" class="distribution">
+  <h2>Designtralized Token Distribution</h2>
+  <ul>
+    <li>
+      <span class="label">Foundation Reserve:</span>
+      <span class="value">20%</span>
+    </li>
+    <li>
+      <span class="label">Team:</span>
+      <span class="value">15%</span>
+    </li>
+    <li>
+      <span class="label">Early Investors:</span>
+      <span class="value">15%</span>
+    </li>
+    <li>
+      <span class="label">Community Rewards:</span>
+      <span class="value">20%</span>
+    </li>
+    <li>
+      <span class="label">Ecosystem Development:</span>
+      <span class="value">30%</span>
+    </li>
+  </ul>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="P5" class="roadmap">
+  <div class="roadmap-header">
+    <h2><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #000; padding: 3px 10px;">Roadmap</text></h2>
+      <p>
+      The platform aims to address various challenges that designers
+        and creative professionals face, such as lack of access to design resources,
+        difficulty in finding work, and issues with intellectual property rights.
+      </p>
+  </div>
+  <div class="roadmap-body">
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Mainnet</p>
+      <p>Launch DFT network and token distribution</p>
+    </div>
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Mainnet</p>
+      <p>Integrate with major exchanges</p>
+    </div>
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Mainnet</p>
+      <p>Release DFT Studio beta version</p>
+    </div>
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Wallet</p>
+      <p>Partner with major Dapps</p>
+    </div>
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Studio</p>
+      <p>Partner with design schools and universities</p>
+    </div>
+    <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Marketplace</p>
+      <p>Partner with leading design agencies</p>
+    </div>
+      <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Marketplace</p>
+      <p>Partner with leading design agencies</p>
+    </div>
+      <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Marketplace</p>
+      <p>Partner with leading design agencies</p>
+    </div>
+      <div class="roadmap-item">
+      <h3><text style="border-bottom: 1px solid #9e4be7; color: #000; padding: 3px 10px;">Q1 2023</text></h3>
+      <p>Launch DFT Marketplace</p>
+      <p>Partner with leading design agencies</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="about">
+    <h1>Detailization</h1>
+    <p>
+        Designtralized is revolutionizing the design<br>
+        industry by providing a comprehensive platform for design resource<br>
+        management, collaboration, and professional networking.
+    </p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----
+==================
+Footer Code
+==================
+------->
+<footer>
+	<div class="content">
+		<div class="top">
+		</div>
+		<div class="link-boxes">
+			<ul class="box">
+				<li class="link_name">Links</li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+			<ul class="box">
+				<li class="link_name">Services</li>
+				<li><a href="#">App Design</a></li>
+				<li><a href="#">Web Design</a></li>
+			</ul>
+
+	<ul class="box">
+				<li class="link_name">Other services</li>
+				<li><a href="#">SEO</a></li>
+				<li><a href="#">Content Marketing</a></li>
+			</ul>
+
+			<ul class="box">
+				<li class="link_name">Community</li>
+				<li><a href="#">+91 8879887262</a></li>
+				<li><a href="#">+91 8879887262</a></li>
+			</ul>
+
+		</div>
+	</div>
+	    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="#">Sitesoch.</a></span>
+        <span class="policy_terms">
+          <a href="#">Powered by InkLab</a>
+
+        </span>
+      </div>
+    </div>
+</footer>
+<!-----
+==================
+Footer Code End
+==================
+------->
+</body>
+</html>
